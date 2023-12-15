@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import Card from "./Card.astro";
+import marketplace from "../img/marketplace.png"
+
+---
+
+<section class=" m-6 p-4 gap-7 opacity-80 hover:opacity-100">
+    <div class="mx-auto text-center p-5  lg:mb-16 w-auto bg-west-side-800 rounded-3xl drop-shadow-lg">
+        <h3 class="text-center font-bold text-3xl underline text-west-side-400   tracking-wider"> Mis trabajos son</h3>
+        <div class=" flex flex-wrap justify-center ">
+                <Card tittle="TecnoMarket" description="En esta pagina maquete un marketplace con  ReactJs utilizando Vite, para los estilos utilicé Sass y use Firebase " url="https://marketplace-tecno.vercel.app/" >
+                    <Image src={marketplace} alt=""/>
+                </Card>
+        </div>
+    </div>
+</section>
